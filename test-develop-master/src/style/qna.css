@@ -1,0 +1,146 @@
+/* qna로 넘어갈 때 display: block; */
+#qna {
+  display: none;
+  opacity: 0;
+}
+.qnaBox {
+  padding: 20px 30px;
+}
+.question {
+  word-break: keep-all;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.title {
+  text-align: center;
+}
+.answer-radio {
+  margin-right: 5px;
+}
+.answer {
+  display: inline-block;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  padding: 5px;
+}
+.go-next-btn {
+  margin: 30px;
+  width: 120px;
+  height: 45px;
+  background: rgba(0, 135, 245, 0.7);
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 700;
+}
+.go-next-btn:hover {
+  background: rgba(0, 135, 245, 1.0);
+}
+.status-bar {
+  margin: 0 12.5% 20px;
+  width: 75%;
+  height: 15px;
+  border: 3px solid #ddd;
+  border-radius: 20px;
+  background: #fff;
+  animation: fade-in 0.3s ease-in-out;
+}
+.status {
+  height: 100%;
+  border-radius: 20px;
+  background-color: rgba(191, 168, 255, 0.7);
+}
+.box {
+  margin: 0 auto;
+  padding: 20px;
+  width: 80%;
+  box-shadow: #ddd 0px 0px 10px 5px;
+  border-radius: 20px;
+  background: rgb(252, 252, 252);
+}
+.q {
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  font-size: 27.2px;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  animation: fade-in 0.5s ease-in-out 0.3s forwards;
+  opacity: 0;
+}
+.a {
+  margin: 20px 10% 0 10%;
+  padding: 15px;
+  border: none;
+  font-size: 17.6px;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  text-align: left;
+  transition: background-color, color 0.2s linear;
+  opacity: 0;
+  cursor: pointer;
+}
+.a:hover, .a:focus {
+  background: #222;
+  color: #eee;
+}
+.a:last-child {
+  margin-bottom: 60px;
+}
+
+@media all and (min-width: 768px) {
+  .status-bar {
+    margin: 0px 15% 30px;
+    width: 70%;
+    height: 20px;
+  }
+  .box {
+    margin: 0 auto;
+    padding: 30px;
+    width: 80%;
+    box-shadow: #ddd 0px 0px 10px 5px;
+    border-radius: 20px;
+    background: rgb(252, 252, 252);
+  }
+  .q {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    font-size: 32px;
+    font-size: 2rem;
+  }
+  .a {
+    margin: 15px 0;
+    padding: 20px 30px;
+    width: 100%;
+    font-size: 20.8px;
+    font-size: 1.3rem;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .status-bar {
+    margin: 0px 15% 40px 15%;
+  }
+  .q {
+    margin-bottom: 80px;
+    font-size: 40px;
+    font-size: 2.5rem;
+  }
+  .a {
+    padding: 25px 35px;
+    width: 100%;
+    font-size: 22.4px;
+    font-size: 1.4rem;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .status-bar {
+    margin: 0 5% 40px 5%;
+    width: 90%;
+  }
+  .q {
+    margin-bottom: 80px;
+    width: 100%;
+    font-size: 40px;
+    font-size: 2.5rem;
+  }
+}
